@@ -87,7 +87,7 @@ You can read more about .obj files [here](https://en.wikipedia.org/wiki/Wavefron
 ### :point_right: Installation
 
 ``` python
-pip install stl-obj-convertor
+pip install -i https://test.pypi.org/simple/ stl-obj-convertor
 ```
 
 ### :point_right: How to use this convertor?
@@ -95,7 +95,7 @@ pip install stl-obj-convertor
 To use this convertor, run the following command
 
 ``` python
-from stl-obj-convertor import convertor
+from stl_obj_convertor import convertor
 ```
 
 You will have to give to inputs, The file you want to convert.

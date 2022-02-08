@@ -31,15 +31,16 @@ An ASCII STL file begins with the line
 > _solid name_
 
 where name is an optional string (though if name is omitted there must still be a space after solid). The file continues with any number of triangles, each represented as follows:
-
->_facet normal ni nj nk_
->\______ _outer loop_
->\_________ _vertex v1x v1y v1z_
->\_________ _vertex v2x v2y v2z_
->\_________ _vertex v3x v3y v3z_
->\______ _endloop_
->_endfacet_
-> _endsolid name_
+```
+_facet normal ni nj nk_
+\______ _outer loop_
+\_________ _vertex v1x v1y v1z_
+\_________ _vertex v2x v2y v2z_
+\_________ _vertex v3x v3y v3z_
+\______ _endloop_
+_endfacet_
+_endsolid name_
+```
 
 You can read more about .Stl files [here](https://en.wikipedia.org/wiki/STL_(file_format) ".stl file wikipedia")
 
@@ -55,32 +56,33 @@ An OBJ file may contain vertex data, free-form curve/surface attributes, element
 
 Anything following a hash character (#) is a comment.
 \# this is a comment
-
->\# List of geometric vertices, with (x, y, z [,w]) coordinates, w is optional and defaults to 1.0.
->_v 0.123 0.234 0.345 1.0_
->_v ..._
->_..._
+```
+\# List of geometric vertices, with (x, y, z [,w]) coordinates, w is optional and defaults to 1.0.
+_v 0.123 0.234 0.345 1.0_
+_v ..._
+_..._
 \# List of texture coordinates, in (u, [,v ,w]) coordinates, these will vary between 0 and 1. v, w are optional and default to 0.
->_vt 0.500 1 [0]_
->_vt ..._
->_...
+_vt 0.500 1 [0]_
+_vt ..._
+_...
 \# Li_st of vertex normals in (x,y,z) form; normals might not be unit vectors.
->_vn 0.707 0.000 0.707_
->_vn ..._
->_..._
+_vn 0.707 0.000 0.707_
+_vn ..._
+_..._
 \# Parameter space vertices in ( u [,v] [,w] ) form; free form geometry statement ( see below )
->_vp 0.310000 3.210000 2.100000_
->_vp ..._
->_...
+_vp 0.310000 3.210000 2.100000_
+_vp ..._
+_...
 \# Polygonal face element (see below)
->_f 1 2 3_
->_f 3/1 4/2 5/3_
->_f 6/4/1 3/5/3 7/6/5_
->_f 7//1 8//2 9//3_
->_f ..._
->_..._
+_f 1 2 3_
+_f 3/1 4/2 5/3_
+_f 6/4/1 3/5/3 7/6/5_
+_f 7//1 8//2 9//3_
+_f ..._
+_..._
 \# Line element (see below)
->_l 5 8 1 2 4 9_
+_l 5 8 1 2 4 9_
+```
 
 You can read more about .obj files [here](https://en.wikipedia.org/wiki/Wavefront_.obj_file ".obj File Wikipedia")
 

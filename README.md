@@ -151,5 +151,8 @@ This version of the package uses regular expressions (_regex_) python module to 
 1) Does this convertor binary .stl file to .obj?
 Ans - No, The current version of this convertor package can only converts ASCII .stl to .obj.
     But, the feature will be added in next version of the package.
+    
+2) Does this convertor converts .obj file with faces which are not in trainglur forms?
+Ans - No, The current version of this convertor package can only those .obj file which have faces stored in triangular form.
 
 

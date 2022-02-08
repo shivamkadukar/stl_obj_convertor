@@ -22,8 +22,6 @@ The STL file format provides two different ways of storing information about the
 - The coordinates of the vertices.
 - The components of the unit normal vector to the triangle. The normal vector should point outwards with respect to the 3D model.
 
-![.stl image](https://drive.google.com/file/d/1b7PQoW2i7TMO6fnQ1ZKLANFzlbRjNjVS/view?usp=sharing)
-
 #### .stl file format
 
 An ASCII STL file begins with the line
@@ -46,8 +44,6 @@ You can read more about .Stl files [here](https://en.wikipedia.org/wiki/STL_(fil
 #### .obj file
 
 An OBJ file is a standard 3D image format that can be exported and opened by various 3D image editing programs. It contains a three-dimensional object, which includes 3D coordinates, texture maps, polygonal faces, and other object information
-
-![.obj file](https://drive.google.com/file/d/1-n_sfsstoW0M4KcH51z1je9igcfJKTOf/view?usp=sharing)
 
 #### .obj file format
 
@@ -97,6 +93,8 @@ To use this convertor, run the following command
 ``` python
 from stl_obj_convertor import convertor
 ```
+
+You can try out the package on this [file](https://drive.google.com/drive/folders/1HpkMrwUWt8scaL5o78qVAc-gynplM91g?usp=sharing)
 
 You will have to give to inputs, The file you want to convert.
 (ex - E:\\cctech\\assignment 1 stl_obj_convertor\\data\\cube.stl)
@@ -152,6 +150,10 @@ Ans - No, The current version of this convertor package can only converts ASCII 
 
 2) Does this convertor converts .obj file with faces which are not in trainglur forms?
 Ans - No, The current version of this convertor package can only those .obj file which have faces stored in triangular form. This functionality will be added in next maintenance version.
+Currently it works on the files with faces format
+f 1/2/3 2/4/5 5/6/7
+and not with the face format
+f 1/2/3 2/4/5 5/6/7 7/8/9......so on.
 
 
 

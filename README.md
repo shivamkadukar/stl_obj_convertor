@@ -128,7 +128,7 @@ This version of the package uses regular expressions (_regex_) python module to 
 
 [x] __Phase 2__: Recreated the convertor code in Oops format and tested on more complex geometries like a teapot, liver, ferrari, etc.
 
-[x] __Phase 3__: Wrote Test Suite for the project and published as a python package. (version 1.0.0)
+[x] __Phase 3__: Wrote Test Suite for the project and published as a python package. (version 0.1.0)
 
 [] __Phase 4__: Level up your code to include a geometry finder which, for instance, returns the connected vertices from a given vertice. Various possible inputs & outputs are as follows:
   \- Input: vertice Output: vertices, edges, faces

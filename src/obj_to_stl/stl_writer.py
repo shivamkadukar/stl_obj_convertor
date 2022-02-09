@@ -8,7 +8,7 @@ class StlWriter():
         printprogreesbar(0, l, prefix = 'Progress:', suffix = 'Complete', length = 50)
         file.write("solid\n")
 
-        for normal in normal_index:
+        for i, normal in enumerate(normal_index):
             file.write('\tfacet ')
             file.write('normal ')
             file.write(searched_normals[normal])

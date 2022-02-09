@@ -1,10 +1,11 @@
-from re import search
-
+from utilis.progressbar import printprogreesbar
 
 class StlWriter():
     def write(self, file, normal_index, searched_normals, vertex_index, searched_vertices):
         start, end = 0, 3
+        l = len(normal_index)
         
+        printprogreesbar(0, l, prefix = 'Progress:', suffix = 'Complete', length = 50)
         file.write("solid\n")
 
         for normal in normal_index:
@@ -26,5 +27,7 @@ class StlWriter():
             file.write('\t\tendloop\n')
 
             file.write('\tendfacet\n')
+            
+            printprogreesbar(i + 1, l, prefix = 'Progress:', suffix = 'Complete', length = 50)
             
         file.write('endsolid')

@@ -9,6 +9,7 @@
 - [TechnologiesUsed](#pointright-technologies-used)
 - [Contributors](#pointright-contributors)
 - [Development](#pointright-development)
+- [Version Info](#pointright-version-info)
 - [FAQs](#pointright-faqs)
 
 ### :point_right: Introduction
@@ -135,6 +136,14 @@ This version of the package uses regular expressions (_regex_) python module to 
   \- Input: face Output: vertices, edges, faces
 
 [] __Phase 5__: To conserve memory, use file streaming methods to convert from one format to another. Simultaneous read and write of the files.
+
+#### :point_right: Version Info
+
+|  Version     |                                                                           |
+|--------------|---------------------------------------------------------------------------|
+|   0.1.0      | Converts .obj to .stl and vice versa                                      |
+|   0.1.1      | Improved the Readme.md and added link to sample files to run the packages |
+|   0.2.0      | Added progress bar to check progress of file conversion                   |
 
 ### :point_right: Contributors
 

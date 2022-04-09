@@ -1,8 +1,8 @@
 import unittest
 
 from src.stl_to_obj.stl_reader import *
-
 reader = StlReader()
+
 
 class TestStlReader(unittest.TestCase):
     def test_is_instance(self):

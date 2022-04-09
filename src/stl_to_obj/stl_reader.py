@@ -1,6 +1,7 @@
 import re
 
-class StlReader():
+
+class StlReader:
     def __init__(self):
         self.searched_vertices = []
         self.searched_normals = []
@@ -42,7 +43,4 @@ class StlReader():
             line = line.replace('facet normal', ' ')
             line = line.strip()
             self.searched_normals.append(line)
-        
-
-#print(StlReader.search_normals.__doc__, StlReader.search_vertices.__doc__)
 

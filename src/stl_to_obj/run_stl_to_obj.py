@@ -4,6 +4,7 @@ from src.stl_to_obj.obj_writer import ObjWriter
 
 from src.file import file_to_read, file_to_write
 
+
 def main():
 
     write_file = open(file_to_write,'w')

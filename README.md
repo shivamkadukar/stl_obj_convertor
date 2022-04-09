@@ -4,15 +4,15 @@
 
 ## Table of Contents
 
-- [Introduction](#pointright-introduction)
-- [Installation](#pointright-installation)
-- [TechnologiesUsed](#pointright-technologies-used)
-- [Contributors](#pointright-contributors)
-- [Development](#pointright-development)
-- [Version Info](#pointright-version-info)
-- [FAQs](#pointright-faqs)
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [TechnologiesUsed](#technologies-used)
+- [Contributors](#contributorscontributors)
+- [Development](#development)
+- [Version Info](#version-info)
+- [FAQs](#faqs)
 
-### :point_right: Introduction
+### Introduction
 
 This python package converts .stl file to .obj file format and vice versa.
 
@@ -82,12 +82,12 @@ l 5 8 1 2 4 9
 
 You can read more about .obj files [here](https://en.wikipedia.org/wiki/Wavefront_.obj_file ".obj File Wikipedia")
 
-### :point_right: Installation
+### Installation
 
 ```
 pip install -i https://test.pypi.org/simple/ stl-obj-convertor
 ```
-### :point_right: How to use this convertor?
+### How to use this convertor?
 
 To use this convertor, run the following command
 
@@ -95,7 +95,7 @@ To use this convertor, run the following command
 from stl_obj_convertor import convertor
 ```
 
-You can try out the package on this [file](https://drive.google.com/drive/folders/1HpkMrwUWt8scaL5o78qVAc-gynplM91g?usp=sharing)
+You can try out the package on this [file](https://drive.google.com/drive/folders/1HpkMrwUWt8scaL5o78qVAc-gynplM91g?usp=sharing) (more files will be added soon)
 
 You will have to give to inputs, The file you want to convert.
 (ex - E:\\cctech\\assignment 1 stl_obj_convertor\\data\\cube.stl)
@@ -107,6 +107,8 @@ The convertor will check the file type, if the file is .stl type then it will ru
 
 Note - Make sure the file to read i.e. the first input is either a .stl file or a .obj file any other file type will result in an error.
 
+You can view the converted file [here](https://www.creators3d.com/online-viewer)
+
 To run the test suite, run the following command
 
 ```
@@ -115,20 +117,20 @@ python -m unittest
 
 This command will run all the tests present in the test suite of this package.
 
-### :point_right: Technologies used
+### Technologies used
 
 This package does not requires any third party python libraries and functionalites to work except which comes with
 python 3.0 or greater.
 
 This version of the package uses regular expressions (_regex_) python module to search for patterns which are explained in .stl and .obj file formats.
 
-#### :point_right: Development
+#### Development
 
 [x] __Phase 1__: Created the converter using procedural code format and tested on simple geometries like a cube, etc.
 
 [x] __Phase 2__: Recreated the convertor code in Oops format and tested on more complex geometries like a teapot, liver, ferrari, etc.
 
-[x] __Phase 3__: Wrote Test Suite for the project and published as a python package. (version 0.1.0)
+[x] __Phase 3__: Wrote Test Suite for the project and published as a python package. (version 1.0.0)
 
 [] __Phase 4__: Level up your code to include a geometry finder which, for instance, returns the connected vertices from a given vertice. Various possible inputs & outputs are as follows:
   \- Input: vertice Output: vertices, edges, faces
@@ -137,32 +139,29 @@ This version of the package uses regular expressions (_regex_) python module to 
 
 [] __Phase 5__: To conserve memory, use file streaming methods to convert from one format to another. Simultaneous read and write of the files.
 
-#### :point_right: Version Info
+#### Version Info
 
 |  Version     |                                                                           |
 |--------------|---------------------------------------------------------------------------|
 |   0.1.0      | Converts .obj to .stl and vice versa                                      |
 |   0.1.1      | Improved the Readme.md and added link to sample files to run the packages |
 |   0.2.0      | Added progress bar to check progress of file conversion                   |
+|   0.3.0      | .obj to .stl conversion of files with quadrilateral faces
 
-### :point_right: Contributors
+### Contributors
 
 | Name         | Contact             |
 |--------------|---------------------|
 |Shivam Kadukar|shivamk2802@gmail.com|
 
-### :point_right: FAQs
+### FAQs
 
 1) Does this convertor binary .stl file to .obj?
 Ans - No, The current version of this convertor package can only converts ASCII .stl to .obj.
     But, the feature will be added in next version of the package.
 
 2) Does this convertor converts .obj file with faces which are not in trainglur forms?
-Ans - No, The current version of this convertor package can only those .obj file which have faces stored in triangular form. This functionality will be added in next maintenance version.
-Currently it works on the files with faces format
-f 1/2/3 2/4/5 5/6/7
-and not with the face format
-f 1/2/3 2/4/5 5/6/7 7/8/9......so on.
+Ans - Package lower other than 0.3.0 can only convert .obj files with trianular faces. Version 0.3.0 can convert .obj file with quadrilateral faces(testing of faces with more than 4 vertices are yet to be tested.)
 
 
 

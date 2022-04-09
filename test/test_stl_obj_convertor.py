@@ -6,6 +6,7 @@ from src.stl_to_obj.stl_obj_convertor import *
 Vertex = StlVertexConvertor()
 Normal = StlNormalConvertor()
 
+
 class TestVertexConvertor(unittest.TestCase):
     
     def test_is_instance(self):

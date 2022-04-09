@@ -4,8 +4,8 @@ from src.stl_to_obj.stl_reader import *
 from src.stl_to_obj.stl_obj_convertor import *
 from src.stl_to_obj.obj_writer import *
 
-test_read = 'E:\\cctech\\stl_obj_convertor\\test\\test_data\\test_cube.stl'
-test_write = 'E:\\cctech\\stl_obj_convertor\\test\\test_data\\result.obj'
+test_read = 'E:\\cctech\\assignment 1 stl_obj_convertor\\test\\test_data\\test_cube.stl'
+test_write = 'E:\\cctech\\assignment 1 stl_obj_convertor\\test\\test_data\\result.obj'
 
 write_file = open(test_write,'r+')
     
@@ -38,7 +38,7 @@ main()
 
 written_file_content = open(test_write,'r').read()
 
-expected_written_content = open('E:\\cctech\\stl_obj_convertor\\test\\test_data\\expected.obj', 'r').read()
+expected_written_content = open('E:\\cctech\\assignment 1 stl_obj_convertor\\test\\test_data\\expected.obj', 'r').read()
 
 class TestObjWriter(unittest.TestCase):
     def test_the_written_file_is_not_empty(self):
